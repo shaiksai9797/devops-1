@@ -97,22 +97,17 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
 	<distributionManagement>
-		<repository>
-			<id>releases</id>
-			<name>Releases</name>
-			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
-		
-		</repository>
-		
-		
-		<!--<snapshotRepository>
-			<id>snapshots</id>
-			<name>Snapshots</name>
-			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository> -->
-	
-	</distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>INBASDPC08424-releases</name>
+        <url>http://172.19.82.9:8040/artifactory/Dummy</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>INBASDPC08424-snapshots</name>
+        <url>http://172.19.82.9:8040/artifactory/Dummy</url>
+    </snapshotRepository>
+</distributionManagement>
 	
 </project>
